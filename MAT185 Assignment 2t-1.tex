@@ -237,7 +237,26 @@ is consistent with the dimension of $V$. \\
 		$$\because cv + dw = u \Rightarrow c = x \notin \mathbb{R}, 
 		d = 0 \text{ or } c = 0, d = x^2 \notin \mathbb{R}$$
 		$$\therefore u, v, w \text{ are linearly independent}$$
+		Since $u, v, w$ are linearly independent and $V = \text{span}\{u, v, w\}$, 
+		they form a basis for $V$. Therefore $\text{dim } V = 3$ because 3 vectors forms
+		the basis of $V$.
 
+		\begin{align}
+			\frac{ax+b}{x^2+3}+\frac{c}{x-2} &= \frac{(ax+b)(x+2)+c(x^2+3)}{(x^2+3)(x-2)} \\
+			&= \frac{ax^2+2ax+bx+2b+cx^2+3c}{(x^2+3)(x-2)} \\
+			&= \frac{(a+c)x^2+(2a+b)x+(2b+3c)}{(x^2+3)(x-2)} \\
+			&= \frac{dx^2+ex+f}{(x^2+3)(x-2)} \\
+			\therefore d = a+c, e = 2a+b, f &= 2b+3c \\
+			b - c &= e - 2d \\
+			b &= \frac{f + 3e - 6d}{5} \\
+			c &= \frac{f - 3e + 6d}{5} \\
+			a &= \frac{- 2f + 6e - 2d}{10} \\
+		\end{align}
+		Since $a, b, c$ can be expressed in terms of $d, e, f$, and $d, e, f$ can be
+		expressed in terms of $a, b, c$, therefore the matrix describing the relationship
+		between $a, b, c$ and $d, e, f$ is invertible. Therefore the partial fraction is 
+		full rank, which is 3 because there are 3 variables. Therefore the partial fraction
+		decomposition has a dimension of 3, which is consistent with the dimension of $V$.
 	}
 }
 
@@ -263,7 +282,18 @@ to exist.
 	\makenonemptybox{550pt}{
 
 	%%% Your work goes here! 
-
+	\begin{align}
+		\frac{a}{x^2+3}+\frac{b}{x-2} &= \frac{a(x-2)+b(x^2+3)}{(x^2+3)(x-2)} \\
+		&= \frac{ax-2a+bx^2+3b}{(x^2+3)(x-2)} \\
+		&= \frac{bx^2+ax+(3b-2a)}{(x^2+3)(x-2)} \\
+		&= \frac{dx^2+ex+f}{(x^2+3)(x-2)} \\
+		\therefore d &= b, e = a, f = 3b-2a \\
+		\therefore f &= 3d - 2e \\
+	\end{align}
+	Since $f$ have to equal to $3d - 2e$, there exists partial fraction decomposition in the form 
+	$\frac{dx^2+ex+f}{(x^2+3)(x-2)} = \frac{a}{x^2+3}+\frac{b}{x-2}$ if and only if $f = 3d - 2e$.
+	Therefore the partial fraction decomposition in the form $\frac{dx^2+ex+f}{(x^2+3)(x-2)} = \frac{a}{x^2+3}+\frac{b}{x-2}$ 
+	does not exist if $f \neq 3d - 2e$. Therefore $\frac{dx^2+ex+f}{(x^2+3)(x-2)} = \frac{a}{x^2+3}+\frac{b}{x-2}$ does not exist for all $f$.
 	}
 }
 

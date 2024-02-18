@@ -411,8 +411,45 @@ to exist.
 	\makenonemptybox{550pt}{
 	
 	%%% Your work goes here! 
-		
-
+		\begin{align}
+			\because \text{span} \{w_1, w_2, w_3, u_1\} &= \mathbb{R}^4 \\
+			W_2 = \text{span} \{u_1, u_2, u_3\} &\subseteq \mathbb{R}^4 \\
+			\therefore u_2, u_3 &\in \text{span} \{w_1, w_2, w_3, u_1\}
+		\end{align}
+		\begin{math}
+			\because w_1, w_2, w_3, u_1 \text{ are linearly independent} \\
+			\therefore \exists \text{ a unique } a_1, a_2, a_3, a_4, b_1, b_2, b_3, b_4 \in \mathbb{R} \mid
+		\end{math}
+		\begin{align}
+			u_2 &= a_1w_1 + a_2w_2 + a_3w_3 + a_4u_1, \\
+			u_3 &= b_1w_1 + b_2w_2 + b_3w_3 + b_4u_1
+		\end{align}
+		\begin{align}
+			\therefore W_2 &= \text{span} \{u_1, a_1w_1 + a_2w_2 + a_3w_3 + a_4u_1, b_1w_1 + b_2w_2 + b_3w_3 + b_4u_1\} \\
+			&= \{xu_1 + y(a_1w_1 + a_2w_2 + a_3w_3 + a_4u_1) + z(b_1w_1 + b_2w_2 + b_3w_3 + b_4u_1) \mid x, y, z \in \mathbb{R}\} \\
+			&= \{xu_1 + ya_1w_1 + ya_2w_2 + ya_3w_3 + ya_4u_1 + zb_1w_1 + zb_2w_2 + zb_3w_3 + zb_4u_1 \mid x, y, z \in \mathbb{R}\} \\
+			&= \{(x + ya_4 + zb_4)u_1 + (ya_1 + zb_1)w_1 + (ya_2 + zb_2)w_2 + (ya_3 + zb_3)w_3 \mid x, y, z \in \mathbb{R}\} \\
+			\therefore W_1 \cap W_2 & \\
+			= \{(x + ya_4 &+ zb_4)u_1 + (ya_1 + zb_1)w_1 + (ya_2 + zb_2)w_2 + (ya_3 + zb_3)w_3 \mid x, y, z \in \mathbb{R}\} \cap \{cw_1 + dw_2 + ew_3 + 0u_1 \mid c, d, e \in \mathbb{R}\}
+		\end{align}
+		For $W_1 \cap W_2$, the coefficients for $u_1, w_1, w_2, w_3$ must be equal.
+		\begin{align}
+			&\therefore W_1 \cap W_2  \\
+			&= \{ku_1 + lw_1 + mw_2 + nw_3 \mid k = x + ya_4 + zb_4 = 0, l = ya_1 + zb_1 = c, m = ya_2 + yb_2 = d, n = ya_3 + yb_3 = e\}
+		\end{align}
+		Since $x$ can be freely chosen, $y, z$ are not bounded by the equation $k = x + ya_4 + zb_4 = 0$.
+		\begin{align}
+			&\therefore W_1 \cap W_2 \\
+			&= \{0u_1 + (ya_1 + zb_1)w_1 + (ya_2 + zb_2)w_2 + (ya_3 + zb_3)w_3 \mid y, z \in \mathbb{R}\} \\
+			&= \{ya_1w_1 + zb_1w_1 + ya_2w_2 + zb_2w_2 + ya_3w_3 + zb_3w_3 \mid y, z \in \mathbb{R}\} \\
+			&= \{y(a_1w_1 + a_2w_2 + a_3w_3) + z(b_1w_1 + b_2w_2 + b_3w_3) \mid y, z \in \mathbb{R}\}
+		\end{align}
+		If $a_1w_1 + a_2w_2 + a_3w_3$ and $b_1w_1 + b_2w_2 + b_3w_3$ are linearly 
+		dependent, then there exist $c$ such that $c(a_1w_1 + a_2w_2 + a_3w_3) = 
+		b_1w_1 + b_2w_2 + b_3w_3$. Since $u_2 = a_1w_1 + a_2w_2 + a_3w_3 + a_4u_1$, 
+		$u_3 = b_1w_1 + b_2w_2 + b_3w_3 + b_4u_1$, 
+		therefore $a_1w_1 + a_2w_2 + a_3w_3 = u_2 - a_4u_1$, $b_1w_1 + b_2w_2 + b_3w_3 = u_3 - b_4u_1$.
+		$c(a_1w_1 + a_2w_2 + a_3w_3) = b_1w_1 + b_2w_2 + b_3w_3 = c(u_2 - a_4u_1) = u_3 - b_4u_1$
 	}
 }
 

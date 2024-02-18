@@ -287,10 +287,9 @@ is consistent with the dimension of $V$. \\
       		% b &= \frac{6d + 3e - 2f}{7} \\
 			% c &= \frac{3d - 2e - f}{7} \\
 		\end{align}
-		Since the matrix describing the relationship
-		between $a, b, c$ and $d, e, f$ is invertible. Therefore the partial fraction is 
-		full rank, which is 3 because there are 3 variables. Therefore the partial fraction
-		decomposition has a dimension of 3, which is consistent with the dimension of $V$.
+  		Any set of $d$, $e$, and $f$ may be represented in terms of $a$, $b$, and $c$. As $a$, $b$, and $c$ 
+    		are real numbers; V can once again be written as span{$u,v,w$}. Therefore, the dimension of the form $\frac{ax + b}{x^{2}+3}+\frac{c}{x-2}$ 
+      		is also 3.
 	}
 }
 
@@ -324,7 +323,7 @@ to exist.
 		\therefore d &= b, e = a, f = 3b-2a \\
 		\therefore f &= 3d - 2e \\
 	\end{align}
-	Since $f$ have to equal to $3d - 2e$, there exists partial fraction decomposition in the form 
+	Since $f$ has to equal to $3d - 2e$, there exists partial fraction decomposition in the form 
 	$\frac{dx^2+ex+f}{(x^2+3)(x-2)} = \frac{a}{x^2+3}+\frac{b}{x-2}$ if and only if $f = 3d - 2e$.
 	Therefore the partial fraction decomposition in the form $\frac{dx^2+ex+f}{(x^2+3)(x-2)} = \frac{a}{x^2+3}+\frac{b}{x-2}$ 
 	does not exist if $f \neq 3d - 2e$. Therefore $\frac{dx^2+ex+f}{(x^2+3)(x-2)} = \frac{a}{x^2+3}+\frac{b}{x-2}$ does not exist for all $f$.
@@ -354,10 +353,12 @@ to exist.
 	\makenonemptybox{200pt}{
 	
 	%%% Your work goes here! 
-		Since $u_1, u_2, u_3$ forms a basis for $W_2$, $\text{dim} W_2 = 3$, and 
-		$u_1, u_2, u_3$ all belong to $W_1$, therefore $W_2 \subseteq W_1$. Since 
-		$\text{dim} W_1 = \text{dim} W_2 = 3$, therefore $W_1 = W_2$, $W_1 \cap W_2 = W_1$, 
-		which is a 3-dimensional subspace of $\mathbb{R}^4$. Therefore $W_1 \cap W_2$ contains a plane.
+ \\
+		$w_1$, $w_2$, and $w_3$ forms a basis of $W_1$ and $u_1$, $u_2$, and $u_3$ forms a basis of $W_2$; 
+  		by this, dim $W_2$ = dim $W_1$ = $3$. Since $u_1,u_2,u_3\in W_2$ and are linearly independent 
+    		to eachother, then $u_1$, $u_2$, and $u_3$ can form a basis of $W_1$ aswell; then, by definintion, 
+      		$W_1=W_2=W_1\capW_2$. Therefore, as $W_1\capW_2$ is a 3d subspace of $\mathbb{R}^{4}$, then
+		it contains a plane.
 		
 
 	}
@@ -365,7 +366,7 @@ to exist.
 
 \vspace{20pt}
 
-\noin{(b)}  Now suppose that not all of ${\bf u_1}, {\bf u}_2, {\bf u}_3$ belong to $W_1$.  Say ${\bf u}_1\notin W_1$.  Prove that ${\bf w}_1, {\bf w}_2, {\bf w}_3, {\bf u}_1$ is a basis for $\mathbb R^4$.
+\noin{(b)}  Now suppose that not all of ${\bf u_1}, {\bf u}_2, {\bf u}_3$ belong to $W_1$. Say ${\bf u}_1\notin W_1$. Prove that ${\bf w}_1, {\bf w}_2, {\bf w}_3, {\bf u}_1$ is a basis for $\mathbb R^4$.
 
 
 %Question 2(b)
@@ -378,11 +379,13 @@ to exist.
 	
 	%%% Your work goes here! 
 		$\\$
-		Since $w_1, w_2, w_3$ forms a basis for $W_1$, 
+		Since $w_1$, $w_2$, and $w_3$ forms a basis for $W_1$; 
 		$\text{dim} W_1 = \text{dim span} \{w_1, w_2, w_3\} = 3$, and $w_1, w_2, w_3$ 
-		are linearly independent. Since $u_1 \notin W_1$, $u_1$ cannot be expressed as a
+		are linearly independent.\\
+  		$u_1 \notin W_1$; thus, $u_1$ cannot be expressed as a
 		linear combination of $w_1, w_2, w_3$. Therefore $w_1, w_2, w_3, u_1$ are linearly
-		independent. Since $w_1, w_2, w_3, u_1 \in \mathbb{R}^4$, are linearly independent, 
+		independent. \\
+  		Since $w_1, w_2, w_3, u_1 \in \mathbb{R}^4$, are linearly independent, 
 		and $\text{dim} \mathbb{R}^4 = 4$, therefore $w_1, w_2, w_3, u_1$ forms a basis for 
 		$\mathbb{R}^4$.
 

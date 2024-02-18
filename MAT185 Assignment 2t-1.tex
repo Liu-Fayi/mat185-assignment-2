@@ -248,10 +248,44 @@ is consistent with the dimension of $V$. \\
 			&= \frac{(a+c)x^2+(-2a+b)x+(-2b+3c)}{(x^2+3)(x-2)} \\
 			&= \frac{dx^2+ex+f}{(x^2+3)(x-2)} \\
 			\therefore d = a+c, e = -2a+b, f &= -2b+3c \\
-			b + 2c &= e + 2d \\
-			a &= \frac{4d + 2e + f}{7} \\
-      		b &= \frac{6d + 3e - 2f}{7} \\
-			c &= \frac{3d - 2e - f}{7} \\
+			\Rightarrow 
+			\begin{bmatrix}
+				1 & 0 & 1 \\
+				-2 & 1 & 0 \\
+				0 & -2 & 3 \\
+			\end{bmatrix}
+			\begin{bmatrix}
+				a \\
+				b \\
+				c \\
+			\end{bmatrix}
+			&=
+			\begin{bmatrix}
+				d \\
+				e \\
+				f \\
+			\end{bmatrix} \\
+			\Rightarrow
+			\begin{bmatrix}
+				1 & 0 & 0 \\
+				0 & 1 & 0 \\
+				0 & 0 & 1 \\
+			\end{bmatrix}
+			\begin{bmatrix}
+				a \\
+				b \\
+				c \\
+			\end{bmatrix}
+			&=
+			\begin{bmatrix}
+				\frac{4d + 2e + f}{7} \\
+				\frac{6d + 3e - 2f}{7} \\
+				\frac{3d - 2e - f}{7} \\
+			\end{bmatrix} \\
+			% b + 2c &= e + 2d \\
+			% a &= \frac{4d + 2e + f}{7} \\
+      		% b &= \frac{6d + 3e - 2f}{7} \\
+			% c &= \frac{3d - 2e - f}{7} \\
 		\end{align}
 		Since $a, b, c$ can be expressed in terms of $d, e, f$, and $d, e, f$ can be
 		expressed in terms of $a, b, c$, therefore the matrix describing the relationship

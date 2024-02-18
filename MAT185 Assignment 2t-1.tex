@@ -449,10 +449,22 @@ to exist.
 		\end{align}
 		If $a_1w_1 + a_2w_2 + a_3w_3$ and $b_1w_1 + b_2w_2 + b_3w_3$ are linearly 
 		dependent, then there exist $c$ such that $c(a_1w_1 + a_2w_2 + a_3w_3) = 
-		b_1w_1 + b_2w_2 + b_3w_3$. Since $u_2 = a_1w_1 + a_2w_2 + a_3w_3 + a_4u_1$, 
-		$u_3 = b_1w_1 + b_2w_2 + b_3w_3 + b_4u_1$, 
-		therefore $a_1w_1 + a_2w_2 + a_3w_3 = u_2 - a_4u_1$, $b_1w_1 + b_2w_2 + b_3w_3 = u_3 - b_4u_1$.
-		$c(a_1w_1 + a_2w_2 + a_3w_3) = b_1w_1 + b_2w_2 + b_3w_3 = c(u_2 - a_4u_1) = u_3 - b_4u_1$
+		b_1w_1 + b_2w_2 + b_3w_3$.
+		\begin{align}
+			\because u_2 &= a_1w_1 + a_2w_2 + a_3w_3 + a_4u_1 \\
+			\therefore a_1w_1 + a_2w_2 + a_3w_3 &= u_2 - a_4u_1 \\
+			\because u_3 &= b_1w_1 + b_2w_2 + b_3w_3 + b_4u_1 \\
+			\therefore b_1w_1 + b_2w_2 + b_3w_3 &= u_3 - b_4u_1 \\
+			c(a_1w_1 + a_2w_2 + a_3w_3) &= b_1w_1 + b_2w_2 + b_3w_3 \\
+			\Rightarrow c(u_2 - a_4u_1) &= u_3 - b_4u_1\\
+			u_3 &= cu_2 - (a_4c - b_4)u_1
+		\end{align}
+		This contradicts the assumption that $u_1, u_2, u_3$ are linearly independent,
+		therefore $a_1w_1 + a_2w_2 + a_3w_3$ and $b_1w_1 + b_2w_2 + b_3w_3$ are linearly 
+		independent and forms a basis for $W_1 \cap W_2$. Therefore $\text{dim} (W_1 \cap W_2) = 2$
+		and $W_1 \cap W_2 = \text{span}\{a_1w_1 + a_2w_2 + a_3w_3, b_1w_1 + b_2w_2 + b_3w_3\}$
+		which spans a plane in $\mathbb{R}^4$.
+
 	}
 }
 
